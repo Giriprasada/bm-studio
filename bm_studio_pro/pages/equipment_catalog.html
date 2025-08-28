@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipment Catalog - BM Studio Pro | Professional Camera & Equipment Rentals</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Rent professional photography and videography equipment from BM Studio Pro. Canon, Sony, Profoto, DJI and more with real-time availability and expert support." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbmstudio1368back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="font-inter bg-background">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-accent/20">
+        <nav class="container-max px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 2l-1 1H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-4l-1-1H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <span class="text-secondary font-montserrat font-bold text-xl">BM Studio Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-secondary hover:text-accent transition-colors">Home</a>
+                    <a href="services_overview.html" class="text-secondary hover:text-accent transition-colors">Services</a>
+                    <a href="equipment_catalog.html" class="text-accent font-medium">Equipment</a>
+                    <a href="portfolio_gallery.html" class="text-secondary hover:text-accent transition-colors">Portfolio</a>
+                    <a href="client_portal.html" class="text-secondary hover:text-accent transition-colors">Client Portal</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="booking_system.html" class="btn-primary">Book Your Session</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-secondary p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-primary border-t border-accent/20">
+                    <a href="homepage.html" class="block px-3 py-2 text-secondary hover:text-accent">Home</a>
+                    <a href="services_overview.html" class="block px-3 py-2 text-secondary hover:text-accent">Services</a>
+                    <a href="equipment_catalog.html" class="block px-3 py-2 text-accent font-medium">Equipment</a>
+                    <a href="portfolio_gallery.html" class="block px-3 py-2 text-secondary hover:text-accent">Portfolio</a>
+                    <a href="client_portal.html" class="block px-3 py-2 text-secondary hover:text-accent">Client Portal</a>
+                    <a href="booking_system.html" class="block mx-3 my-2 btn-primary text-center">Book Your Session</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 lg:pt-24 pb-12 bg-primary overflow-hidden">
+        <div class="hero-overlay"></div>
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?q=80&w=2940&auto=format&fit=crop" alt="Professional Camera Equipment" class="w-full h-full object-cover opacity-30" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+        </div>
+        
+        <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-secondary mb-6">
+                    Professional Equipment 
+                    <span class="text-accent">Marketplace</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-secondary/90 mb-8 max-w-3xl mx-auto">
+                    Rent premium cameras, lenses, lighting, and accessories from top brands with real-time availability and expert support
+                </p>
+                
+                <!-- Quick Search Bar -->
+                <div class="max-w-2xl mx-auto mb-8">
+                    <div class="relative">
+                        <input type="text" placeholder="Search equipment by name, brand, or category..." class="w-full px-6 py-4 pr-16 text-lg bg-secondary rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" id="hero-search" />
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-accent text-primary p-3 rounded-lg hover:opacity-90 transition-opacity">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="flex flex-wrap justify-center gap-8 text-secondary/80">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                        <span class="font-montserrat font-semibold">50+ Premium Items</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Same-Day Pickup Available</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Fully Insured Equipment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Section -->
+    <section class="section-padding bg-surface">
+        <div class="container-max">
+            <!-- Filter Controls -->
+            <div class="bg-secondary rounded-lg shadow-subtle p-6 mb-8">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                    <h2 class="text-2xl font-montserrat font-bold text-text-primary">Browse Equipment</h2>
+                    <div class="flex items-center space-x-4">
+                        <button class="flex items-center space-x-2 text-text-secondary hover:text-accent transition-colors" id="filter-toggle">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707v4.586l-4-2v-2.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                            </svg>
+                            <span>Filters</span>
+                        </button>
+                        <button class="flex items-center space-x-2 text-text-secondary hover:text-accent transition-colors" id="reset-filters">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            <span>Reset</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <button class="category-tab active" data-category="all">All Equipment</button>
+                    <button class="category-tab" data-category="cameras">Cameras</button>
+                    <button class="category-tab" data-category="lenses">Lenses</button>
+                    <button class="category-tab" data-category="lighting">Lighting</button>
+                    <button class="category-tab" data-category="audio">Audio</button>
+                    <button class="category-tab" data-category="accessories">Accessories</button>
+                </div>
+
+                <!-- Advanced Filters -->
+                <div class="filter-panel hidden" id="advanced-filters">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Brand Filter -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">Brand</label>
+                            <select class="input-field">
+                                <option value>All Brands</option>
+                                <option value="canon">Canon</option>
+                                <option value="sony">Sony</option>
+                                <option value="nikon">Nikon</option>
+                                <option value="profoto">Profoto</option>
+                                <option value="dji">DJI</option>
+                                <option value="rode">Rode</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">Daily Rate</label>
+                            <select class="input-field">
+                                <option value>Any Price</option>
+                                <option value="0-50">$0 - $50</option>
+                                <option value="50-100">$50 - $100</option>
+                                <option value="100-200">$100 - $200</option>
+                                <option value="200+">$200+</option>
+                            </select>
+                        </div>
+
+                        <!-- Availability -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">Availability</label>
+                            <input type="date" class="input-field" id="availability-date" min="2025-08-28" />
+                        </div>
+
+                        <!-- Sort By -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">Sort By</label>
+                            <select class="input-field" id="sort-by">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Equipment Bundles -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-montserrat font-bold text-text-primary mb-6">Popular Equipment Bundles</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Wedding Photography Kit -->
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300" onclick="selectBundle('wedding')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2940&auto=format&fit=crop" alt="Wedding Photography Kit" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 right-4 bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                                Save 20%
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-montserrat font-semibold text-text-primary mb-2">Wedding Photography Kit</h4>
+                        <p class="text-text-secondary mb-4">Canon R5, 24-70mm f/2.8, 85mm f/1.4, Flash Kit</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-montserrat font-bold text-accent">$180/day</span>
+                            <span class="text-sm text-text-secondary line-through">$225/day</span>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Video Setup -->
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300" onclick="selectBundle('corporate')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Corporate Video Setup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 right-4 bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                                Save 15%
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-montserrat font-semibold text-text-primary mb-2">Corporate Video Setup</h4>
+                        <p class="text-text-secondary mb-4">Sony FX6, Ronin Stabilizer, Audio Kit, Lighting</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-montserrat font-bold text-accent">$280/day</span>
+                            <span class="text-sm text-text-secondary line-through">$330/day</span>
+                        </div>
+                    </div>
+
+                    <!-- Portrait Studio Kit -->
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300" onclick="selectBundle('portrait')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/studio-1869560_1280.jpg" alt="Portrait Studio Kit" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 right-4 bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                                Save 25%
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-montserrat font-semibold text-text-primary mb-2">Portrait Studio Kit</h4>
+                        <p class="text-text-secondary mb-4">Profoto B10 Kit, Softboxes, Reflectors, Backdrop</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-montserrat font-bold text-accent">$150/day</span>
+                            <span class="text-sm text-text-secondary line-through">$200/day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Equipment Grid -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-montserrat font-bold text-text-primary">All Equipment</h3>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-text-secondary" id="results-count">Showing 24 of 50+ items</span>
+                        <div class="flex items-center space-x-2">
+                            <button class="p-2 text-text-secondary hover:text-accent transition-colors" id="grid-view" title="Grid View">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                                </svg>
+                            </button>
+                            <button class="p-2 text-accent hover:text-text-primary transition-colors" id="list-view" title="List View">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipment Items Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="equipment-grid">
+                    <!-- Canon EOS R5 -->
+                    <div class="equipment-item card group cursor-pointer" data-category="cameras" data-brand="canon" data-price="75" onclick="openEquipmentModal('canon-r5')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?q=80&w=2940&auto=format&fit=crop" alt="Canon EOS R5" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Canon EOS R5</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">45MP full-frame mirrorless camera with 8K video</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$75</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">3 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Sony A7 IV -->
+                    <div class="equipment-item card group cursor-pointer" data-category="cameras" data-brand="sony" data-price="65" onclick="openEquipmentModal('sony-a7iv')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sony A7 IV" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Sony A7 IV</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.8</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">33MP full-frame with advanced autofocus system</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$65</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">2 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Profoto B10 Kit -->
+                    <div class="equipment-item card group cursor-pointer" data-category="lighting" data-brand="profoto" data-price="85" onclick="openEquipmentModal('profoto-b10')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/studio-1869560_1280.jpg" alt="Profoto B10 Kit" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Profoto B10 Kit</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">Professional studio lighting with wireless control</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$85</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">4 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- DJI Ronin RS3 -->
+                    <div class="equipment-item card group cursor-pointer" data-category="accessories" data-brand="dji" data-price="45" onclick="openEquipmentModal('dji-ronin')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1554048612-b6a482b224b0?q=80&w=2940&auto=format&fit=crop" alt="DJI Ronin RS3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-warning text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                                1 Left
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">DJI Ronin RS3</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.7</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">3-axis gimbal stabilizer for professional video</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$45</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-warning font-medium">1 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Canon 24-70mm f/2.8 -->
+                    <div class="equipment-item card group cursor-pointer" data-category="lenses" data-brand="canon" data-price="35" onclick="openEquipmentModal('canon-24-70')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Canon 24-70mm f/2.8" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Canon 24-70mm f/2.8</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.8</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">Professional standard zoom lens with IS</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$35</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">5 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Rode VideoMic Pro Plus -->
+                    <div class="equipment-item card group cursor-pointer" data-category="audio" data-brand="rode" data-price="25" onclick="openEquipmentModal('rode-videomic')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg" alt="Rode VideoMic Pro Plus" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Rode VideoMic Pro+</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.6</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">Professional on-camera microphone with battery</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$25</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">6 Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Sony 85mm f/1.4 -->
+                    <div class="equipment-item card group cursor-pointer" data-category="lenses" data-brand="sony" data-price="40" onclick="openEquipmentModal('sony-85mm')">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2940&auto=format&fit=crop" alt="Sony 85mm f/1.4" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-start justify-between mb-2">
+                            <h4 class="text-lg font-montserrat font-semibold text-text-primary">Sony 85mm f/1.4</h4>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-3">Premium portrait lens with beautiful bokeh</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-montserrat font-bold text-accent">$40</span>
+                                <span class="text-sm text-text-secondary">/day</span>
+                            </div>
+                            <span class="text-sm text-success font-medium">3 Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button class="btn-secondary" id="load-more">Load More Equipment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Modal -->
+    <div class="fixed inset-0 bg-primary/80 backdrop-blur-sm z-50 hidden" id="equipment-modal">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-secondary rounded-lg shadow-modal max-w-4xl w-full max-h-screen overflow-y-auto">
+                <div class="sticky top-0 bg-secondary border-b border-border p-6 flex items-center justify-between">
+                    <h3 class="text-2xl font-montserrat font-bold text-text-primary" id="modal-title">Canon EOS R5</h3>
+                    <button class="text-text-secondary hover:text-text-primary p-2" id="close-modal">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Image Gallery -->
+                        <div>
+                            <div class="relative mb-4">
+                                <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?q=80&w=2940&auto=format&fit=crop" alt="Canon EOS R5" class="w-full h-80 object-cover rounded-lg" id="modal-main-image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute top-4 left-4 bg-success text-secondary px-3 py-1 rounded-full text-sm font-semibold">
+                                    Available
+                                </div>
+                            </div>
+                            
+                            <!-- Thumbnail Gallery -->
+                            <div class="grid grid-cols-4 gap-2">
+                                <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?q=80&w=2940&auto=format&fit=crop" alt="Canon EOS R5 Front" class="w-full h-20 object-cover rounded cursor-pointer border-2 border-accent" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Canon EOS R5 Back" class="w-full h-20 object-cover rounded cursor-pointer border-2 border-border hover:border-accent transition-colors" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/studio-1869560_1280.jpg" alt="Canon EOS R5 Side" class="w-full h-20 object-cover rounded cursor-pointer border-2 border-border hover:border-accent transition-colors" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <img src="https://images.unsplash.com/photo-1554048612-b6a482b224b0?q=80&w=2940&auto=format&fit=crop" alt="Canon EOS R5 Top" class="w-full h-20 object-cover rounded cursor-pointer border-2 border-border hover:border-accent transition-colors" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            </div>
+                        </div>
+
+                        <!-- Equipment Details -->
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex items-center space-x-1">
+                                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                        </svg>
+                                        <span class="font-semibold">4.9</span>
+                                        <span class="text-text-secondary">(127 reviews)</span>
+                                    </div>
+                                </div>
+                                <button class="p-2 text-text-secondary hover:text-accent transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <p class="text-text-secondary mb-6">
+                                Professional full-frame mirrorless camera with 45MP resolution, 8K video recording, and advanced autofocus system. Perfect for wedding photography, portraits, and commercial work.
+                            </p>
+
+                            <!-- Pricing -->
+                            <div class="bg-surface p-4 rounded-lg mb-6">
+                                <div class="grid grid-cols-3 gap-4 text-center">
+                                    <div>
+                                        <div class="text-2xl font-montserrat font-bold text-accent">$75</div>
+                                        <div class="text-sm text-text-secondary">Daily</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-montserrat font-bold text-accent">$450</div>
+                                        <div class="text-sm text-text-secondary">Weekly</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-montserrat font-bold text-accent">$1,500</div>
+                                        <div class="text-sm text-text-secondary">Monthly</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Technical Specifications -->
+                            <div class="mb-6">
+                                <h4 class="font-montserrat font-semibold text-text-primary mb-3">Technical Specifications</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Resolution:</span>
+                                        <span class="text-text-primary">45.0 MP</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Sensor Size:</span>
+                                        <span class="text-text-primary">Full Frame (36 x 24 mm)</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Video:</span>
+                                        <span class="text-text-primary">8K RAW, 4K 120p</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">ISO Range:</span>
+                                        <span class="text-text-primary">100-51,200 (exp. 50-102,400)</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Autofocus:</span>
+                                        <span class="text-text-primary">1,053 AF points</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Availability Calendar -->
+                            <div class="mb-6">
+                                <h4 class="font-montserrat font-semibold text-text-primary mb-3">Check Availability</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-secondary mb-1">Start Date</label>
+                                        <input type="date" class="input-field" min="2025-08-28" id="start-date" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-secondary mb-1">End Date</label>
+                                        <input type="date" class="input-field" min="2025-08-29" id="end-date" />
+                                    </div>
+                                </div>
+                                <div class="mt-3 text-sm text-success">
+                                    ✓ Available for selected dates (3 units available)
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button class="btn-primary flex-1" onclick="addToCart()">
+                                    Add to Cart
+                                </button>
+                                <button class="btn-secondary flex-1" onclick="window.location.href='booking_system.html'">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Equipment -->
+                    <div class="mt-8 pt-8 border-t border-border">
+                        <h4 class="font-montserrat font-semibold text-text-primary mb-4">Recommended with this item</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="card p-4 cursor-pointer hover:shadow-lg transition-all duration-300">
+                                <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Canon 24-70mm f/2.8" class="w-full h-24 object-cover rounded mb-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h5 class="font-montserrat font-semibold text-text-primary text-sm mb-1">Canon 24-70mm f/2.8</h5>
+                                <p class="text-text-secondary text-xs mb-2">Professional zoom lens</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-accent font-semibold">$35/day</span>
+                                    <button class="text-xs bg-accent text-primary px-2 py-1 rounded">Add</button>
+                                </div>
+                            </div>
+
+                            <div class="card p-4 cursor-pointer hover:shadow-lg transition-all duration-300">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/studio-1869560_1280.jpg" alt="Profoto B10 Kit" class="w-full h-24 object-cover rounded mb-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h5 class="font-montserrat font-semibold text-text-primary text-sm mb-1">Profoto B10 Kit</h5>
+                                <p class="text-text-secondary text-xs mb-2">Studio lighting kit</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-accent font-semibold">$85/day</span>
+                                    <button class="text-xs bg-accent text-primary px-2 py-1 rounded">Add</button>
+                                </div>
+                            </div>
+
+                            <div class="card p-4 cursor-pointer hover:shadow-lg transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1554048612-b6a482b224b0?q=80&w=2940&auto=format&fit=crop" alt="Camera Bag" class="w-full h-24 object-cover rounded mb-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h5 class="font-montserrat font-semibold text-text-primary text-sm mb-1">Professional Camera Bag</h5>
+                                <p class="text-text-secondary text-xs mb-2">Protective carrying case</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-accent font-semibold">$15/day</span>
+                                    <button class="text-xs bg-accent text-primary px-2 py-1 rounded">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="fixed right-0 top-0 h-full w-80 bg-secondary shadow-modal transform translate-x-full transition-transform duration-300 z-40" id="cart-sidebar">
+        <div class="p-6 border-b border-border">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-montserrat font-bold text-text-primary">Your Cart</h3>
+                <button class="text-text-secondary hover:text-text-primary p-2" id="close-cart">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="flex-1 overflow-y-auto p-6">
+            <div class="text-center text-text-secondary py-12" id="empty-cart">
+                <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5-6m0 0h15M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg>
+                <p>Your cart is empty</p>
+                <p class="text-sm mt-2">Add some equipment to get started</p>
+            </div>
+        </div>
+        
+        <div class="p-6 border-t border-border">
+            <div class="flex items-center justify-between mb-4">
+                <span class="font-montserrat font-semibold text-text-primary">Total:</span>
+                <span class="text-2xl font-montserrat font-bold text-accent">$0</span>
+            </div>
+            <button class="btn-primary w-full" onclick="window.location.href='booking_system.html'">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="fixed inset-0 bg-primary/50 backdrop-blur-sm z-30 hidden" id="cart-overlay"></div>
+
+    <!-- Floating Cart Button -->
+    <button class="fixed bottom-6 right-6 bg-accent text-primary p-4 rounded-full shadow-lg hover:opacity-90 transition-opacity z-20" id="cart-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5-6m0 0h15M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"/>
+        </svg>
+        <span class="absolute -top-2 -right-2 bg-error text-secondary text-xs rounded-full w-6 h-6 flex items-center justify-center font-semibold" id="cart-count">0</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-surface section-padding">
+        <div class="container-max">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 2l-1 1H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-4l-1-1H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <span class="text-text-primary font-montserrat font-bold text-xl">BM Studio Pro</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Premium photography and event management studio with integrated equipment rental marketplace. Capturing perfection in every frame.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-semibold text-text-primary mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services_overview.html" class="text-text-secondary hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="equipment_catalog.html" class="text-text-secondary hover:text-accent transition-colors">Equipment</a></li>
+                        <li><a href="portfolio_gallery.html" class="text-text-secondary hover:text-accent transition-colors">Portfolio</a></li>
+                        <li><a href="booking_system.html" class="text-text-secondary hover:text-accent transition-colors">Book Now</a></li>
+                        <li><a href="client_portal.html" class="text-text-secondary hover:text-accent transition-colors">Client Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-montserrat font-semibold text-text-primary mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            (555) 123-4567
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            hello@bmstudiopro.com
+                        </li>
+                        <li class="flex items-start text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 mt-1 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            123 Studio Street<br />Creative District, NY 10001
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 BM Studio Pro. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterToggle = document.getElementById('filter-toggle');
+        const advancedFilters = document.getElementById('advanced-filters');
+        const resetFilters = document.getElementById('reset-filters');
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const equipmentItems = document.querySelectorAll('.equipment-item');
+
+        filterToggle.addEventListener('click', () => {
+            advancedFilters.classList.toggle('hidden');
+        });
+
+        resetFilters.addEventListener('click', () => {
+            // Reset all filters
+            document.querySelectorAll('select').forEach(select => select.value = '');
+            document.getElementById('availability-date').value = '';
+            categoryTabs.forEach(tab => tab.classList.remove('active'));
+            categoryTabs[0].classList.add('active');
+            equipmentItems.forEach(item => item.style.display = 'block');
+        });
+
+        // Category filtering
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const category = tab.dataset.category;
+                equipmentItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Equipment modal functionality
+        const equipmentModal = document.getElementById('equipment-modal');
+        const closeModal = document.getElementById('close-modal');
+
+        function openEquipmentModal(equipmentId) {
+            equipmentModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeModal.addEventListener('click', () => {
+            equipmentModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        equipmentModal.addEventListener('click', (e) => {
+            if (e.target === equipmentModal) {
+                equipmentModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Cart functionality
+        const cartButton = document.getElementById('cart-button');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        const closeCart = document.getElementById('close-cart');
+        const cartCount = document.getElementById('cart-count');
+        let cartItems = [];
+
+        cartButton.addEventListener('click', () => {
+            cartSidebar.classList.remove('translate-x-full');
+            cartOverlay.classList.remove('hidden');
+        });
+
+        closeCart.addEventListener('click', () => {
+            cartSidebar.classList.add('translate-x-full');
+            cartOverlay.classList.add('hidden');
+        });
+
+        cartOverlay.addEventListener('click', () => {
+            cartSidebar.classList.add('translate-x-full');
+            cartOverlay.classList.add('hidden');
+        });
+
+        function addToCart() {
+            cartItems.push({
+                id: 'canon-r5',
+                name: 'Canon EOS R5',
+                price: 75,
+                image: 'https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?q=80&w=2940&auto=format&fit=crop'
+            });
+            
+            cartCount.textContent = cartItems.length;
+            
+            // Show success message
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-24 right-4 bg-success text-secondary px-4 py-2 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+            toast.textContent = 'Item added to cart!';
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-x-full');
+            }, 100);
+            
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 2000);
+        }
+
+        function selectBundle(bundleType) {
+            // Add bundle to cart logic
+            const bundles = {
+                wedding: { name: 'Wedding Photography Kit', price: 180 },
+                corporate: { name: 'Corporate Video Setup', price: 280 },
+                portrait: { name: 'Portrait Studio Kit', price: 150 }
+            };
+            
+            const bundle = bundles[bundleType];
+            if (bundle) {
+                cartItems.push({
+                    id: bundleType,
+                    name: bundle.name,
+                    price: bundle.price,
+                    type: 'bundle'
+                });
+                
+                cartCount.textContent = cartItems.length;
+                
+                // Show success message
+                const toast = document.createElement('div');
+                toast.className = 'fixed top-24 right-4 bg-success text-secondary px-4 py-2 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+                toast.textContent = `${bundle.name} added to cart!`;
+                document.body.appendChild(toast);
+                
+                setTimeout(() => {
+                    toast.classList.remove('translate-x-full');
+                }, 100);
+                
+                setTimeout(() => {
+                    toast.classList.add('translate-x-full');
+                    setTimeout(() => {
+                        document.body.removeChild(toast);
+                    }, 300);
+                }, 2000);
+            }
+        }
+
+        // Search functionality
+        const heroSearch = document.getElementById('hero-search');
+        
+        heroSearch.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            equipmentItems.forEach(item => {
+                const title = item.querySelector('h4').textContent.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Load more functionality
+        const loadMoreBtn = document.getElementById('load-more');
+        loadMoreBtn.addEventListener('click', () => {
+            // Simulate loading more items
+            loadMoreBtn.textContent = 'Loading...';
+            setTimeout(() => {
+                loadMoreBtn.textContent = 'Load More Equipment';
+                // In a real app, you would load more items here
+            }, 1000);
+        });
+
+        // Add CSS for category tabs
+        const style = document.createElement('style');
+        style.textContent = `
+            .category-tab {
+                @apply px-4 py-2 rounded-lg border border-border text-text-secondary hover:text-accent hover:border-accent transition-colors cursor-pointer;
+            }
+            
+            .category-tab.active {
+                @apply bg-accent text-primary border-accent;
+            }
+            
+            .filter-panel {
+                @apply mt-6 pt-6 border-t border-border;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Thumbnail gallery functionality
+        document.querySelectorAll('#equipment-modal img[alt*="Canon EOS R5"]').forEach((thumb, index) => {
+            if (index > 0) { // Skip the main image
+                thumb.addEventListener('click', () => {
+                    const mainImage = document.getElementById('modal-main-image');
+                    mainImage.src = thumb.src;
+                    
+                    // Update active thumbnail
+                    document.querySelectorAll('#equipment-modal img[alt*="Canon EOS R5"]').forEach(img => {
+                        if (img !== mainImage) {
+                            img.classList.remove('border-accent');
+                            img.classList.add('border-border');
+                        }
+                    });
+                    thumb.classList.remove('border-border');
+                    thumb.classList.add('border-accent');
+                });
+            }
+        });
+
+        // Date validation
+        const startDate = document.getElementById('start-date');
+        const endDate = document.getElementById('end-date');
+
+        startDate.addEventListener('change', () => {
+            endDate.min = startDate.value;
+            if (endDate.value && endDate.value < startDate.value) {
+                endDate.value = '';
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #000000; /* black */
+  --color-secondary: #FFFFFF; /* white */
+  --color-accent: #D4AF37; /* gold */
+  
+  /* Background Colors */
+  --color-background: #FAFAFA; /* neutral-50 */
+  --color-surface: #F5F5F5; /* neutral-100 */
+  
+  /* Text Colors */
+  --color-text-primary: #1A1A1A; /* neutral-900 */
+  --color-text-secondary: #666666; /* neutral-500 */
+  
+  /* Status Colors */
+  --color-success: #2D5A27; /* green-800 */
+  --color-warning: #B8860B; /* yellow-600 */
+  --color-error: #8B0000; /* red-800 */
+  
+  /* Border Colors */
+  --color-border: #E5E5E5; /* neutral-200 */
+  
+  /* Shadow Colors */
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-modal: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-primary font-montserrat font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-out hover:opacity-90 hover:shadow-subtle;
+  }
+  
+  .btn-secondary {
+    @apply bg-primary text-secondary font-montserrat font-semibold px-6 py-3 rounded-lg border border-primary transition-all duration-300 ease-out hover:bg-secondary hover:text-primary;
+  }
+  
+  .card {
+    @apply bg-surface rounded-lg shadow-subtle p-6 transition-all duration-300 ease-out hover:shadow-lg;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg font-inter focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300 ease-out;
+  }
+  
+  .text-accent-light {
+    @apply text-accent opacity-80;
+  }
+  
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-primary/60 to-primary/30;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-12 lg:py-20;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .shadow-modal {
+    box-shadow: var(--shadow-modal);
+  }
+  
+  .transition-smooth {
+    transition: all 300ms ease-out;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
